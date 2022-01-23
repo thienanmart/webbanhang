@@ -36,6 +36,16 @@ npm start
 # Chạy backend only
 npm run prod
 ```
+
+# Tài khoản đăng nhập vào website:
+```
++ Khách hàng
+	Tài khoản: thang@gmail.com
+	Mật khẩu: 123456
++ Quản trị
+	Tài khoản: admin@gmail.com
+	Mật khẩu: 123456
+```
 <p align="center">
 	<img src="https://i.pinimg.com/originals/56/a7/b8/56a7b8e4953907848148e15efa28ae81.gif" width = "500" alt="TNT">
 	</a>
