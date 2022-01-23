@@ -26,7 +26,7 @@ npm install
 ```
 ### Hướng dẫn chạy chương trình (frontend & backend)
 <h5>Vào terminal và thực hiện</h5>
-Chú ý: Nhấn các lệnh theo tuần tự
+Chú ý: gõ cách các lệnh theo tuần tự
 
 ```
 # Chạy frontend (:3000) & backend (:4000)
