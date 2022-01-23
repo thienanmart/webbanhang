@@ -37,7 +37,10 @@ const Header = () => {
                 </div>
 
                 <div className="col-12 col-md-3 mt-4 mt-md-0 text-center">
-                    {user && user.role !== 'admin' && (
+                    {user && user.role === 'admin' ? (
+                        <p></p>
+                    ) : (
+                        
                         <Link to="/cart" style={{ textDecoration: 'none' }} >
                             <span id="cart" className="ml-3">Giỏ hàng</span>
                             <span className="ml-1" id="cart_count"><i class="bi bi-cart4"></i>{cartItems.length}</span>
