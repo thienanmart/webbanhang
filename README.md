@@ -7,7 +7,7 @@
 
 ![screenshot](https://github.com/huuthang28cb/Nhom3_IVS_ThucTapChuyenNganh/blob/master/frontend/public/images/home.PNG)
 
-## Trong tương lai:
+## Hướng phát triển trong tương lai:
 -	Áp dụng công nghệ như AI, Machine Learning để gợi ý sản phẩm cho khách hàng
 -	Sử dụng Machine Learning để thống kê
 -	Tích hợp và hỗ trợ khách hàng tìm kiếm sản phẩm bằng hình ảnh và giọng nói
@@ -17,6 +17,7 @@
 
 ### Hướng dẫn cài đặt thư viện hỗ trợ đề tài (frontend & backend)
 <h5>Vào terminal và thực hiện</h5>
+Chú ý: Nhấn các lệnh theo tuần tự
 
 ```
 npm install
@@ -25,13 +26,14 @@ npm install
 ```
 ### Hướng dẫn chạy chương trình (frontend & backend)
 <h5>Vào terminal và thực hiện</h5>
+Chú ý: Nhấn các lệnh theo tuần tự
 
 ```
-# Run frontend (:3000) & backend (:4000)
+# Chạy frontend (:3000) & backend (:4000)
 cd frontend
 npm start
 
-# Run backend only
+# Chạy backend only
 npm run prod
 ```
 <p align="center">
