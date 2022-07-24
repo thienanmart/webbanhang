@@ -1,5 +1,6 @@
 # Nhóm 3 IVS - Thực thập chuyên ngành
 # Đề tài: Website bán hàng trực tuyến
+<h3>Link demo: https://taphoashop.herokuapp.com/</h3>
 <h3>Thành viên nhóm: </h3>
 <h6>+ Võ Hữu Thắng</h6>
 <h6>+ Nguyễn Văn Hải Long</h6>
