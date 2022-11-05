@@ -21,7 +21,7 @@
 Chú ý: Nhấn các lệnh theo tuần tự
 
 ```
-npm install
+npm install (thư mục gốc - chứ hai thư mục frontend và backend)
 cd frontend
 npm install
 ```
@@ -34,7 +34,7 @@ Chú ý: gõ cách các lệnh theo tuần tự
 cd frontend
 npm start
 
-# Chạy backend only
+# Chạy backend only (thư mục gốc)
 npm run prod
 ```
 
