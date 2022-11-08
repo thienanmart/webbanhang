@@ -47,6 +47,15 @@ npm run prod
 	Tài khoản: admin@gmail.com
 	Mật khẩu: 123456
 ```
+
+# Thông tin thẻ để test thanh toán:
+```
+
+MÃ THẺ: 4242424242424242
+HẠN THẺ: 12/34
+CVC: 567
+
+```
 # Video hướng dẫn chi tiết:
 Nhấn tại đây: [Xem video hướng dẫn chi tiết chạy chương trình](https://drive.google.com/file/d/10NLJZx4gNJPUH_5TLZcOMnJNslfyUwwI/view?usp=sharing)
 
