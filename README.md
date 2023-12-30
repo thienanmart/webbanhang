@@ -23,7 +23,7 @@ Phiên bản Node.js sử dụng là Node.js v16.13.1 (hoặc phiên bản v16 c
 Chú ý: Nhấn các lệnh theo tuần tự
 
 ```
-npm install (thư mục gốc - chứ hai thư mục frontend và backend)
+npm install (thư mục gốc - chứa hai thư mục frontend và backend)
 cd frontend
 npm install
 ```
