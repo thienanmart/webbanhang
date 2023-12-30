@@ -6,7 +6,7 @@
 <h6>+ Nguyễn Văn Hải Long</h6>
 <h6>+ Nguyễn Quốc Thắng</h6>
 
-Phiên bản Node.js sử dụng là Node.js v16.13.1 (hoặc phiên bản v16 cùng cấp)
+Phiên bản Node.js sử dụng là Node.js: [v16.13.1](https://nodejs.org/dist/v16.13.1/node-v16.13.1-x86.msi) (hoặc phiên bản v16 cùng cấp)
 
 ![screenshot](https://github.com/huuthang28cb/Nhom3_IVS_ThucTapChuyenNganh/blob/master/frontend/public/images/home.PNG)
 
