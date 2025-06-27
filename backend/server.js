@@ -1,3 +1,4 @@
+const express = require('express'); // ⬅️ BẮT BUỘC phải có dòng này
 const path = require('path');
 const app = require('./app');
 const connectDatabase = require('./config/database');
@@ -25,14 +26,14 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
-// 👉 Phục vụ giao diện React (build)
+// 👉 Phục vụ frontend React khi đã build
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'));
 });
 
-// Lắng nghe server
+// Khởi động server
 const PORT = process.env.PORT || 5000;
 
 const server = app.listen(PORT, () => {
