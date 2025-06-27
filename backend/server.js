@@ -1,41 +1,41 @@
-const app = require('./app')
-const connectDatabase = require('./config/database')
+const app = require('./app');
+const connectDatabase = require('./config/database');
+const cloudinary = require('cloudinary');
 
-// const dotenv = require('dotenv');
-const cloudinary = require('cloudinary')
-
-// Handle Uncaught exceptions
+// Xử lý lỗi không bắt được (Uncaught Exception)
 process.on('uncaughtException', err => {
-    console.log(`ERROR: ${err.stack}`);
-    console.log('Shutting down due to uncaught exception');
-    process.exit(1)
-})
+    console.error(`❌ Uncaught Exception: ${err.message}`);
+    console.error(err.stack);
+    process.exit(1);
+});
 
-// Setting up config file
-if (process.env.NODE_ENV !== 'PRODUCTION') require('dotenv').config({ path: 'backend/config/config.env' })
+// Load biến môi trường nếu không phải Production
+if (process.env.NODE_ENV !== 'PRODUCTION') {
+    require('dotenv').config({ path: 'backend/config/config.env' });
+}
 
-// dotenv.config({ path: 'backend/config/config.env' })
-
-
-// Connecting to database
+// Kết nối cơ sở dữ liệu
 connectDatabase();
 
-// Setting up cloudinary configuration
+// Cấu hình Cloudinary
 cloudinary.config({
     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
     api_key: process.env.CLOUDINARY_API_KEY,
     api_secret: process.env.CLOUDINARY_API_SECRET
-})
+});
 
-const server = app.listen(process.env.PORT, () => {
-    console.log(`Server started on PORT: ${process.env.PORT} in ${process.env.NODE_ENV} mode.`)
-})
+// Lắng nghe server
+const PORT = process.env.PORT || 5000;
 
-// Handle Unhandled Promise rejections
+const server = app.listen(PORT, () => {
+    console.log(`✅ Server is running on PORT: ${PORT} in ${process.env.NODE_ENV} mode.`);
+});
+
+// Xử lý lỗi Promise bị từ chối mà không bắt (Unhandled Rejection)
 process.on('unhandledRejection', err => {
-    console.log(`ERROR: ${err.stack}`);
-    console.log('Shutting down the server due to Unhandled Promise rejection');
+    console.error(`❌ Unhandled Promise Rejection: ${err.message}`);
+    console.error(err.stack);
     server.close(() => {
-        process.exit(1)
-    })
-})
+        process.exit(1);
+    });
+});
