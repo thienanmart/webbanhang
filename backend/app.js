@@ -41,7 +41,6 @@ if (process.env.NODE_ENV === 'PRODUCTION') {
 
 // Middleware xử lý lỗi
 app.use(errorMiddleware);
-const path = require('path'); // Phải có dòng này ở đầu file nếu chưa có
 
 if (process.env.NODE_ENV === 'PRODUCTION') {
   app.use(express.static(path.join(__dirname, '../frontend/build')));
